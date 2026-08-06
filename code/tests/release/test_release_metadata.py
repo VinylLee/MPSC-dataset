@@ -16,7 +16,7 @@ def test_citation_has_software_and_verified_primary_authors():
     citation = yaml.safe_load(Path("CITATION.cff").read_text(encoding="utf-8"))
 
     assert citation["cff-version"] == "1.2.0"
-    assert citation["version"] == "0.1.1"
+    assert citation["version"] == "0.1.0"
     assert citation["license"] == "MIT"
     assert citation["repository-code"].endswith("VinylLee/MPSC")
     assert [
