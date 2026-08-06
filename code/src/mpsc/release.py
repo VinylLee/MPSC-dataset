@@ -12,7 +12,7 @@ from typing import Any
 def build_release_archive(
     output_path: str | Path,
     *,
-    version: str = "0.1.0",
+    version: str = "0.1.1",
     ref: str = "HEAD",
 ) -> dict[str, Any]:
     """Create a deterministic git archive and adjacent SHA-256 checksum."""
